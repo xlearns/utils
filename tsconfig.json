@@ -1,16 +1,21 @@
 {
 	"extends": "@vue/tsconfig/tsconfig.web.json",
-	"include": ["packages", "typings"],
-	"exclude": ["node_modules", "**/dist", "**/__tests__/**/*"],
+	"include": ["src", "typings"],
+	"exclude": ["node_modules", "dist", "test"],
 	"compilerOptions": {
-		"allowJs": true,
-		"module": "ES6",
+		"module": "esnext",
 		"target": "ES2018",
 		"noImplicitAny": false,
 		"declaration": true,
 		"sourceMap": true,
-		"lib": ["ES2018", "DOM", "DOM.Iterable"],
+		"lib": ["esnext"],
 		"allowSyntheticDefaultImports": true,
-		"types": []
+		"types": [],
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"strict": true,
+		"strictNullChecks": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true
 	}
 }

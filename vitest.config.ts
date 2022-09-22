@@ -1,8 +1,9 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [],
-  test: {
-    include: ['test/**/*.test.ts'],
-  },
-})
+	plugins: [],
+	test: {
+		environment: "jsdom",
+		include: ["test/**/*.test.ts"],
+	},
+});

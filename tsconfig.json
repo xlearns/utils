@@ -8,7 +8,7 @@
 		"noImplicitAny": false,
 		"declaration": true,
 		"sourceMap": true,
-		"lib": ["esnext"],
+		"lib": ["ES2018", "DOM", "DOM.Iterable"],
 		"allowSyntheticDefaultImports": true,
 		"types": [],
 		"moduleResolution": "node",
